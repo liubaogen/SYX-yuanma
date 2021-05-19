@@ -1,0 +1,81 @@
+# serverless.yml
+
+#组件信息
+component: scf # (必选) 组件名称，在该实例中为scf
+name: DogDog # (必选) 组件实例名称。
+
+#组件参数配置
+inputs:
+  name: scf-${name} # 云函数名称，默认为 ${name}-${stage}-${app}
+  enableRoleAuth: true # 默认会尝试创建 SCF_QcsRole 角色，如果不需要配置成 false 即可
+  src: ./
+  handler: index.main_handler #入口
+  runtime: Nodejs12.16 # 运行环境 默认 Nodejs10.15
+  region: na-toronto # 函数所在区域
+  description: This is a function in ${app} application.
+  memorySize: 128 # 内存大小，单位MB
+  timeout: 900 # 超时时间，单位秒
+  events: #触发器
+    - timer: #半点京豆雨
+        parameters:
+          name: Half-RedRain
+          cronExpression: "0 30 16-23/1 * * * *"
+          enable: true
+          argument: jd_half_redrain
+    - timer: #整点京豆雨
+        parameters:
+          name: Super-RedRain
+          cronExpression: "0 0 * * * * *"
+          enable: true
+          argument: jd_super_redrain
+    - timer: #东东超市兑换奖品
+        parameters:
+          name: Redeem-Supermarket
+          cronExpression: "52/1 59 23 * * * *"
+          enable: true
+          argument: jd_blueCoin
+    - timer: #宠汪汪积分兑换奖品
+        parameters:
+          name: Redeem-Joy-Reward
+          cronExpression: "52/1 59 23,7,15 * * * *"
+          enable: true
+          argument: jd_joy_reward
+    - timer: #取关店铺商品
+        parameters:
+          name: Unsubscribe
+          cronExpression: "35 35 * * * * *"
+          enable: true
+          argument: jd_unsubscribe
+    - timer: #争分夺秒新一天-1
+        parameters:
+          name: New-Day-1
+          cronExpression: "0 0 0 * * * *"
+          enable: true
+          argument: jd_bean_sign
+    - timer: #争分夺秒新一天-2
+        parameters:
+          name: New-Day-2
+          cronExpression: "30 0 0 * * * *"
+          enable: true
+          argument: jd_shop&jd_sgmh&jd_jin_tie
+    - timer: #店铺签到
+        parameters:
+          name: Shop-Sign
+          cronExpression: "0 0 0 * * * *"
+          enable: true
+          argument: monk_inter_shop_sign
+    - timer: #杂七杂八-1
+        parameters:
+          name: Miscellaneous-1
+          cronExpression: "0 0 0 * * * *"
+          enable: true
+          argument: z_xmf&jd_club_lottery&jd_rankingList
+    - timer: #杂七杂八-2
+        parameters:
+          name: Miscellaneous-2
+          cronExpression: "0 0 0 * * * *"
+          enable: true
+          argument: jd_lotteryMachine&z_marketLottery
+  environment: #  环境变量
+    variables: #  环境变量对象
+      AAA: BBB # 不要删除，用来格式化对齐追加的变量的
