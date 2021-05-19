@@ -9,9 +9,6 @@
 let shareCodes = [
   '1R28eKJ0z1qLwspHMjWArw==@UsMi4askQRfQFNwX6hvZdw==@cL1QBF2sGrVgbdw63XuPIQ==@4Wy0F1_ZufplubQUAV7_-w==@QT-byxfJtQAbgri_L9ldxg==',//账号一的好友shareCode,不同好友中间用@符号隔开
   '1R28eKJ0z1qLwspHMjWArw==@UsMi4askQRfQFNwX6hvZdw==@cL1QBF2sGrVgbdw63XuPIQ==@4Wy0F1_ZufplubQUAV7_-w==@QT-byxfJtQAbgri_L9ldxg==',//账号二的好友shareCode，不同好友中间用@符号隔开
-  '1R28eKJ0z1qLwspHMjWArw==@UsMi4askQRfQFNwX6hvZdw==@cL1QBF2sGrVgbdw63XuPIQ==@4Wy0F1_ZufplubQUAV7_-w==@QT-byxfJtQAbgri_L9ldxg==',
-  '1R28eKJ0z1qLwspHMjWArw==@UsMi4askQRfQFNwX6hvZdw==@cL1QBF2sGrVgbdw63XuPIQ==@4Wy0F1_ZufplubQUAV7_-w==@QT-byxfJtQAbgri_L9ldxg==',
-  '1R28eKJ0z1qLwspHMjWArw==@UsMi4askQRfQFNwX6hvZdw==@cL1QBF2sGrVgbdw63XuPIQ==@4Wy0F1_ZufplubQUAV7_-w==@QT-byxfJtQAbgri_L9ldxg=='
   
 ]
 // 判断github action里面是否有京喜工厂互助码
