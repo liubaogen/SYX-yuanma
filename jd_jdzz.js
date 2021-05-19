@@ -40,8 +40,8 @@ if ($.isNode()) {
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const inviteCodes = [
-  `S5KkcAEdnkiyRSGOFwIhf@S5KkcJUVwjTa2QFOI9pJo@S5KkcFFx_kwOwaXyv1ZNP@S5KkcJWlLvSGzaEuv56R3@S7aUmAlxQ9FXWJg@S5KkcB2xCoxeeRlud5qVY@S5KkcRE1NpgGDJk7wxaMNdQ@S5KkcF19ugg6Sfl2G5aZr`,
-  `S5KkcAEdnkiyRSGOFwIhf@S5KkcJUVwjTa2QFOI9pJo@S5KkcFFx_kwOwaXyv1ZNP@S5KkcJWlLvSGzaEuv56R3@S7aUmAlxQ9FXWJg@S5KkcB2xCoxeeRlud5qVY@S5KkcRE1NpgGDJk7wxaMNdQ@S5KkcF19ugg6Sfl2G5aZr`
+  `S_bg6H1tRrArfIhL2kfUOcQ@S-agtFAMY9w@S5KkcFFx_kwOwaXyv1ZNP@S5KkcJWlLvSGzaEuv56R3@S7aUmAlxQ9FXWJg@S5KkcB2xCoxeeRlud5qVY@S5KkcRE1NpgGDJk7wxaMNdQ@S5KkcF19ugg6Sfl2G5aZr`,
+  `S_bg6H1tRrArfIhL2kfUOcQ@S-agtFAMY9w@S5KkcFFx_kwOwaXyv1ZNP@S5KkcJWlLvSGzaEuv56R3@S7aUmAlxQ9FXWJg@S5KkcB2xCoxeeRlud5qVY@S5KkcRE1NpgGDJk7wxaMNdQ@S5KkcF19ugg6Sfl2G5aZr`
 ]
 let nowTimes = new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000);
 !(async () => {
