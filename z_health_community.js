@@ -15,7 +15,7 @@ cron "25 10-22/3 * * *" script-path=https://share.r2ray.com/dust/i-chenzhe/z_hea
 健康社区 = type=cron,script-path=https://share.r2ray.com/dust/i-chenzhe/z_health_community.js, cronexpr="25 10-22/3 * * *", timeout=3600, enable=true
 
 新增兑换环境变量
-export Z_HEALTH_EXCHANGE=‘’
+export Z_HEALTH_EXCHANGE=‘体温枪’
 如兑换京豆请填写包含京豆的兑换关键词 例 3京东 10京豆
 如兑换非京豆物品，请尽可能填写可唯一判定的物品名称
 */
