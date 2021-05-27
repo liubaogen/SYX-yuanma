@@ -6,7 +6,7 @@ name: 「0点」京东签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '30 7 * * *'
   repository_dispatch:
     types: jd_bean_sign
 jobs:
